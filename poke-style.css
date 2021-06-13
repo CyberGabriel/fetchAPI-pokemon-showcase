@@ -1,0 +1,176 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(rgba(255,204,1,1) 137px, rgba(54,82,192,1), rgba(4, 119, 71, 1));
+}
+
+.header .ash img {
+    height: 271px;
+    width: 200px;
+}
+
+.header .pika img {
+    height: 271px;
+    width: 299px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 254px;
+    width: 450px;
+}
+
+h1 {
+    font-family: 'Potta One', cursive;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .choice, .chance {
+    margin: 20px;
+}
+
+.navbar #label1, #label2 {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.navbar #choosePoke {
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    width: 150px;
+}
+.navbar #choosePoke:focus::placeholder {
+    color: transparent;
+}
+
+.navbar #choosePoke:focus {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
+}
+
+.navbar #submitIdBtn, #randomIdBtn {
+    outline: none;
+    background: radial-gradient(circle at 45% 15%, rgba(0, 0, 0, 0) 65%, rgb(205, 205, 205) 35%), linear-gradient(to bottom, rgba(254, 3, 3) 35%, rgba(98,98,98) 35%,  rgba(98,98,98) 60%, white 60%);
+    padding: 25px;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    border-color: black;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+
+.navbar #submitIdBtn:hover, #randomIdBtn:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.navbar #submitIdBtn:active, #randomIdBtn:active {
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
+}
+
+.pokeName {
+    font-size: 18px;
+    margin: 0;
+}
+
+.idNumber, .pokeType {
+    font-size: 12px;
+    margin: 0;
+    padding: 3px;
+}
+
+.hitpoints {
+    font-size: 18px;
+    margin: 0;
+    color: red;
+}
+
+.attack, .defense {
+    font-size: 12px;
+    margin: 0;
+    padding: 3px;
+}
+
+.attack {
+    color: blue;
+}
+
+.defense {
+    color: green;
+}
+
+.pokemon {
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(to bottom right, rgb(209, 219, 221), rgb(147, 151, 149));
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgb(255,204,1);
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.4);
+    position: relative;
+    margin: auto;
+}
+
+.identification {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.stats {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+
+.pokemon .cardWindow {
+    position: absolute;
+    top: 65px;
+    left: 15px;
+    height: 200px;
+    width: 225px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255,204,1);
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.3);
+    background-color:rgb(54, 82, 192);
+}
+
+#choosePoke input:focus::placeholder {
+    color: transparent;
+}
+
+.pokemon img {
+    width: 200px;
+}
+
+.displayMoves {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    bottom: 12px;
+    left: 15px;
+    background-color:rgb(209, 212, 209);
+    height: 45px;
+    width: 225px;
+    padding: 3px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Pokemon Showcase</title>
+    <link rel="stylesheet" href="poke-style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="ash">
+            <img src="images/ash.png" alt="ash-pokemon">
+        </div>
+        <div class="logo">
+            <a id="logoLink" href="poke-index.html">
+                <img src="images/pokemon-logo-transparent.png" alt="pokemon-logo">
+            </a>
+        </div>
+        <div class="pika">
+            <img src="images/pikachu.png" alt="pikachu-pokemon">
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="choice">
+            <label id="label1" for="choosePoke">Pokemon ID:</label>
+            <input type="number" name="choosePoke" id="choosePoke" placeholder="between 1 and 898">
+            <button id="submitIdBtn">Go</button>
+        </div>
+        <div class="chance">
+            <label id="label2" for="random">Random Pokemon:</label>
+            <button id="randomIdBtn">??</button>
+        </div>
+    </nav>
+    <div class="pokemon">
+        <div class="identification">
+            <h1 class="pokeName">Name</h1>
+            <h2 class="idNumber">id:</h2>
+            <h3 class="pokeType">type:</h3>
+        </div>
+        <div class="stats">
+            <h4 class="hitpoints">Hitpoints:</h4>
+            <h4 class="attack">Attack:</h4>
+            <h4 class="defense">Defense:</h4>
+        </div>
+        <div class="cardWindow">
+            <img src="" id="pokeImg">
+        </div>
+        <div class="displayMoves">
+            <div class="move1">Move1</div>
+            <div class="move2">Move2</div>
+            <div class="move3">Move3</div>
+            <div class="move4">Move4</div>
+        </div>
+    </div>
+
+	<script src="poke-app.js"></script>
+</body>
+</html>
